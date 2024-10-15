@@ -1,3 +1,5 @@
+const authRoutes = require('./routes/auth'); // Adjust the path if necessary
+
 // Import required modules
 const express = require('express');
 const mysql = require('mysql');
