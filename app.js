@@ -1,12 +1,16 @@
 const express = require('express');
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 
-// Basic route for testing
+// Middleware to parse JSON bodies
+app.use(express.json());
+
+// Define a simple route
 app.get('/', (req, res) => {
   res.send('Welcome to BudgetEase API');
 });
 
+// Start the server
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
