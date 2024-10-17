@@ -1,40 +1,20 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const mysql = require('mysql');
 
-// Create the express app
+// Initialize Express app
 const app = express();
 
-// Middleware to parse request bodies
+// Middleware to parse JSON bodies
 app.use(bodyParser.json());
 
-// MySQL connection setup
-const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'zouzipassword',  // Replace with your actual MySQL password
-    database: 'BudgetEase'
-});
+// Import routes
+const authRoutes = require('./routes/auth');  // Add more routes as needed
 
-db.connect((err) => {
-    if (err) {
-        console.error('Error connecting to MySQL:', err);
-        return;
-    }
-    console.log('Connected to MySQL');
-});
+// Use routes
+app.use('/auth', authRoutes);  // You can add more routes here
 
-// Define a basic route
-app.get('/', (req, res) => {
-    res.send('Welcome to BudgetEase API');
-});
-
-// Import your auth routes
-const authRoutes = require('./routes/auth');
-app.use('/auth', authRoutes);  // All auth routes will be prefixed with /auth
-
-// Start the server and bind to 0.0.0.0
+// Listen on a specified port and bind to '0.0.0.0' to make sure it works on all interfaces
 const PORT = 3000;
 app.listen(PORT, '0.0.0.0', () => {
-    console.log(`Server running on port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
