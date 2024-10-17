@@ -1,7 +1,7 @@
 {
   "name": "BudgetEase",
   "version": "1.0.0",
-  "description": "",
+  "description": "BudgetEase Project Description BudgetEase is a personal finance management REST API that helps users track their income and expenses. The API allows users to perform basic CRUD (Create, Read, Update, Delete) operations on financial transactions, while securely managing user authentication through OAuth. Whether you’re an individual looking to manage your budget or a developer seeking to build a finance tracking app, BudgetEase provides a scalable and secure backend to meet your needs.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/Soufiane1mazouzi/BudgetEase/issues"
   },
-  "homepage": "https://github.com/Soufiane1mazouzi/BudgetEase#readme"
+  "homepage": "https://github.com/Soufiane1mazouzi/BudgetEase#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.21.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.11.3",
+    "sequelize": "^6.37.4"
+  },
+  "devDependencies": {}
 }
