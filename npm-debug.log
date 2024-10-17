@@ -1,0 +1,140 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'sequelize',
+1 verbose cli   'mysql2' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData sequelize
+8 silly fetchPackageMetaData mysql2
+9 silly fetchNamedPackageData sequelize
+10 silly mapToRegistry name sequelize
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry uri https://registry.npmjs.org/sequelize
+14 silly fetchNamedPackageData mysql2
+15 silly mapToRegistry name mysql2
+16 silly mapToRegistry using default registry
+17 silly mapToRegistry registry https://registry.npmjs.org/
+18 silly mapToRegistry uri https://registry.npmjs.org/mysql2
+19 verbose request uri https://registry.npmjs.org/sequelize
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 2:52:32 AM
+22 verbose request id 53f8d2d08933f382
+23 http request GET https://registry.npmjs.org/sequelize
+24 verbose request uri https://registry.npmjs.org/mysql2
+25 verbose request no auth needed
+26 info attempt registry request try #1 at 2:52:33 AM
+27 http request GET https://registry.npmjs.org/mysql2
+28 http 200 https://registry.npmjs.org/mysql2
+29 verbose headers { date: 'Thu, 17 Oct 2024 09:52:33 GMT',
+29 verbose headers   'content-type': 'application/json',
+29 verbose headers   'transfer-encoding': 'chunked',
+29 verbose headers   connection: 'keep-alive',
+29 verbose headers   'cf-ray': '8d3f6580adedc995-IAD',
+29 verbose headers   'cf-cache-status': 'HIT',
+29 verbose headers   'access-control-allow-origin': '*',
+29 verbose headers   age: '293',
+29 verbose headers   'cache-control': 'public, max-age=300',
+29 verbose headers   etag: 'W/"9466780deae346c89304e7485ca37508"',
+29 verbose headers   'last-modified': 'Sun, 15 Sep 2024 22:41:40 GMT',
+29 verbose headers   vary: 'accept-encoding, accept',
+29 verbose headers   server: 'cloudflare',
+29 verbose headers   'content-encoding': 'gzip' }
+30 silly get cb [ 200,
+30 silly get   { date: 'Thu, 17 Oct 2024 09:52:33 GMT',
+30 silly get     'content-type': 'application/json',
+30 silly get     'transfer-encoding': 'chunked',
+30 silly get     connection: 'keep-alive',
+30 silly get     'cf-ray': '8d3f6580adedc995-IAD',
+30 silly get     'cf-cache-status': 'HIT',
+30 silly get     'access-control-allow-origin': '*',
+30 silly get     age: '293',
+30 silly get     'cache-control': 'public, max-age=300',
+30 silly get     etag: 'W/"9466780deae346c89304e7485ca37508"',
+30 silly get     'last-modified': 'Sun, 15 Sep 2024 22:41:40 GMT',
+30 silly get     vary: 'accept-encoding, accept',
+30 silly get     server: 'cloudflare',
+30 silly get     'content-encoding': 'gzip' } ]
+31 verbose get saving mysql2 to /root/.npm/registry.npmjs.org/mysql2/.cache.json
+32 http 200 https://registry.npmjs.org/sequelize
+33 verbose headers { date: 'Thu, 17 Oct 2024 09:52:33 GMT',
+33 verbose headers   'content-type': 'application/json',
+33 verbose headers   'transfer-encoding': 'chunked',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'cf-ray': '8d3f65809dfd3992-IAD',
+33 verbose headers   'cf-cache-status': 'HIT',
+33 verbose headers   'access-control-allow-origin': '*',
+33 verbose headers   age: '144',
+33 verbose headers   'cache-control': 'public, max-age=300',
+33 verbose headers   etag: 'W/"ae89037f70ac11b6c5d3f368ab49a9d7"',
+33 verbose headers   'last-modified': 'Fri, 04 Oct 2024 14:21:15 GMT',
+33 verbose headers   vary: 'accept-encoding, accept',
+33 verbose headers   server: 'cloudflare',
+33 verbose headers   'content-encoding': 'gzip' }
+34 silly get cb [ 200,
+34 silly get   { date: 'Thu, 17 Oct 2024 09:52:33 GMT',
+34 silly get     'content-type': 'application/json',
+34 silly get     'transfer-encoding': 'chunked',
+34 silly get     connection: 'keep-alive',
+34 silly get     'cf-ray': '8d3f65809dfd3992-IAD',
+34 silly get     'cf-cache-status': 'HIT',
+34 silly get     'access-control-allow-origin': '*',
+34 silly get     age: '144',
+34 silly get     'cache-control': 'public, max-age=300',
+34 silly get     etag: 'W/"ae89037f70ac11b6c5d3f368ab49a9d7"',
+34 silly get     'last-modified': 'Fri, 04 Oct 2024 14:21:15 GMT',
+34 silly get     vary: 'accept-encoding, accept',
+34 silly get     server: 'cloudflare',
+34 silly get     'content-encoding': 'gzip' } ]
+35 verbose get saving sequelize to /root/.npm/registry.npmjs.org/sequelize/.cache.json
+36 silly install normalizeTree
+37 silly loadCurrentTree Finishing
+38 silly loadIdealTree Starting
+39 silly install loadIdealTree
+40 silly cloneCurrentTree Starting
+41 silly install cloneCurrentTreeToIdealTree
+42 silly cloneCurrentTree Finishing
+43 silly loadShrinkwrap Starting
+44 silly install loadShrinkwrap
+45 silly loadShrinkwrap Finishing
+46 silly loadAllDepsIntoIdealTree Starting
+47 silly install loadAllDepsIntoIdealTree
+48 silly resolveWithNewModule mysql2@3.11.3 checking installable status
+49 silly cache add args [ 'mysql2', null ]
+50 verbose cache add spec mysql2
+51 verbose stack Error: Missing required argument #1
+51 verbose stack     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+51 verbose stack     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+51 verbose stack     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+51 verbose stack     at /usr/share/npm/lib/install/deps.js:190:5
+51 verbose stack     at /usr/share/npm/node_modules/slide/lib/async-map.js:52:35
+51 verbose stack     at Array.forEach (<anonymous>)
+51 verbose stack     at /usr/share/npm/node_modules/slide/lib/async-map.js:52:11
+51 verbose stack     at Array.forEach (<anonymous>)
+51 verbose stack     at asyncMap (/usr/share/npm/node_modules/slide/lib/async-map.js:51:8)
+51 verbose stack     at exports.loadRequestedDeps (/usr/share/npm/lib/install/deps.js:188:3)
+52 verbose cwd /BudgetEase
+53 error Linux 5.4.0-1103-aws
+54 error argv "/usr/bin/node" "/usr/bin/npm" "install" "sequelize" "mysql2"
+55 error node v8.10.0
+56 error npm  v3.5.2
+57 error code EMISSINGARG
+58 error typeerror Error: Missing required argument #1
+58 error typeerror     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+58 error typeerror     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+58 error typeerror     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+58 error typeerror     at /usr/share/npm/lib/install/deps.js:190:5
+58 error typeerror     at /usr/share/npm/node_modules/slide/lib/async-map.js:52:35
+58 error typeerror     at Array.forEach (<anonymous>)
+58 error typeerror     at /usr/share/npm/node_modules/slide/lib/async-map.js:52:11
+58 error typeerror     at Array.forEach (<anonymous>)
+58 error typeerror     at asyncMap (/usr/share/npm/node_modules/slide/lib/async-map.js:51:8)
+58 error typeerror     at exports.loadRequestedDeps (/usr/share/npm/lib/install/deps.js:188:3)
+59 error typeerror This is an error with npm itself. Please report this error at:
+59 error typeerror     <http://github.com/npm/npm/issues>
+60 verbose exit [ 1, true ]
