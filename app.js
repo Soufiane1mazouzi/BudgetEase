@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'yourpassword',  // Replace with your actual MySQL password
+    password: 'zouzipassword',  // Replace with your actual MySQL password
     database: 'BudgetEase'
 });
 
