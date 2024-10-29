@@ -1,14 +1,15 @@
-const { Sequelize } = require('sequelize');
+const { DataTypes } = require('sequelize');
+const sequelize = require('../config/sequelize');
 
-// Initialize Sequelize with SQLite
-const sequelize = new Sequelize({
-    dialect: 'sqlite',
-    storage: './database.sqlite', // Stores the database in the project root
+const User = sequelize.define('User', {
+    username: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    password: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
 });
 
-// Test the connection to confirm it's working
-sequelize.authenticate()
-    .then(() => console.log("Connected to SQLite database"))
-    .catch(err => console.error("Unable to connect to database:", err));
-
-module.exports = sequelize;
+module.exports = User;
