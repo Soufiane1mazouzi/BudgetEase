@@ -1,7 +1,6 @@
-const sequelize = require('./sequelize');
+const sequelize = require('./config/sequelize'); // Corrected path
 const { DataTypes } = require('sequelize');
 
-// Define the User model
 const User = sequelize.define('User', {
     username: {
         type: DataTypes.STRING,
@@ -13,7 +12,6 @@ const User = sequelize.define('User', {
     },
 });
 
-// Sync the database and create the User table
 async function initializeDatabase() {
     try {
         await sequelize.sync({ force: true });
