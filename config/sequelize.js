@@ -1,15 +1,13 @@
-const { DataTypes } = require('sequelize');
-const sequelize = require('../config/sequelize');
+const { Sequelize } = require('sequelize');
 
-const User = sequelize.define('User', {
-    username: {
-        type: DataTypes.STRING,
-        allowNull: false,
-    },
-    password: {
-        type: DataTypes.STRING,
-        allowNull: false,
-    },
+const sequelize = new Sequelize({
+    dialect: 'sqlite',
+    storage: './database.sqlite',
+    logging: console.log,
 });
 
-module.exports = User;
+sequelize.sync().then(() => {
+    console.log('Database & tables created!');
+});
+
+module.exports = sequelize;
